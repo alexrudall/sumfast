@@ -2,7 +2,7 @@ require 'sinatra/base'
 
 class Sumfast < Sinatra::Base
   get '/' do
-    erb :index
+    erb :index, locals: { result: 23 }
   end
 
   post '/' do
