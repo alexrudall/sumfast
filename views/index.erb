@@ -27,6 +27,13 @@
 
 <div class="banner">
   <form action="/" id="input-form" class="pure-form pure-form-stacked">
+
+      <% if result %>
+        <h1 class="splash-head">
+          <%= result %>
+        </h1>
+      <% end %>
+
       <fieldset>
           <input id="sum" name="sum" type="text" placeholder="Your calculation">
 
@@ -34,12 +41,6 @@
 
           <button id="submit" type="submit" class="pure-button pure-button-primary">Calculate!</button>
       </fieldset>
-
-      <% if result %>
-        <h1 class="splash-head">
-          <%= result %>
-        </h1>
-      <% end %>
   </form>
 
 </div>
