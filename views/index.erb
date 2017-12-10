@@ -33,10 +33,6 @@
 
 <div class="splash-container">
     <div class="splash">
-        <h1 class="splash-head">sumfast</h1>
-        <p class="splash-subhead">
-            Work things out.
-        </p>
 
         <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
 
@@ -45,16 +41,18 @@
 
                     <input id="sum" name="sum" type="text" placeholder="Your calculation">
 
-                    <% if result %>
-                      <label for="sum">Result</label>
-                      <%= result %>
-                    <% end %>
-
                     <input id="email" name="email" type="email" placeholder="Your email">
 
                     <button type="submit" class="pure-button pure-button-primary">Calculate!</button>
                 </fieldset>
             </form>
+
+            <% if result %>
+              <h1 class="splash-head">
+                = <%= result %>
+              </h1>
+              <% end %>
+
         </div>
 
     </div>
