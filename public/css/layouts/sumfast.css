@@ -2,9 +2,6 @@
  * -- BASE STYLES --
  * Most of these are inherited from Base, but I want to change a few.
  */
-body {
-    color: #526066;
-}
 
 h2, h3 {
     letter-spacing: 0.25em;
@@ -28,6 +25,11 @@ p {
     padding: 0.5em 2em;
 }
 
+#input-form {
+  display: inline-block;
+  text-align: center;
+  padding: 250px 0;
+}
 
 /*
  * -- BANNER --

@@ -26,22 +26,22 @@
 <body>
 
 <div class="banner">
-  <form action="/" class="pure-form pure-form-stacked">
+  <form action="/" id="input-form" class="pure-form pure-form-stacked">
       <fieldset>
-
           <input id="sum" name="sum" type="text" placeholder="Your calculation">
 
           <input id="email" name="email" type="email" placeholder="Your email">
 
           <button type="submit" class="pure-button pure-button-primary">Calculate!</button>
       </fieldset>
+
+      <% if result %>
+        <h1 class="splash-head">
+          <%= result %>
+        </h1>
+      <% end %>
   </form>
 
-  <% if result %>
-    <h1 class="splash-head">
-      <%= result %>
-    </h1>
-  <% end %>
 </div>
 
 
