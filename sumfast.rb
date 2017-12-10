@@ -1,12 +1,13 @@
 require 'sinatra/base'
 
 class Sumfast < Sinatra::Base
+
   get '/' do
-    erb :index, locals: { result: 23 }
+    result = params[:sum]
+    erb :index, locals: { result: result }
   end
 
   post '/' do
-
   end
 end
 
