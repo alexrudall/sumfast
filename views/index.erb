@@ -25,46 +25,24 @@
 </head>
 <body>
 
-
-
-
-
-
-
-<div class="pure-menu pure-menu-horizontal">
-    <a href="#" class="pure-menu-heading">Your Logo</a>
-    <ul class="pure-menu-list">
-        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
-        <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Pricing</a></li>
-        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
-    </ul>
-</div>
-
 <div class="banner">
-            <form action="/" class="pure-form pure-form-stacked">
-                <fieldset>
+  <form action="/" class="pure-form pure-form-stacked">
+      <fieldset>
 
-                    <input id="sum" name="sum" type="text" placeholder="Your calculation">
+          <input id="sum" name="sum" type="text" placeholder="Your calculation">
 
-                    <input id="email" name="email" type="email" placeholder="Your email">
+          <input id="email" name="email" type="email" placeholder="Your email">
 
-                    <button type="submit" class="pure-button pure-button-primary">Calculate!</button>
-                </fieldset>
-            </form>
+          <button type="submit" class="pure-button pure-button-primary">Calculate!</button>
+      </fieldset>
+  </form>
 
-            <% if result %>
-              <h1 class="splash-head">
-                <%= result %>
-              </h1>
-            <% end %>
+  <% if result %>
+    <h1 class="splash-head">
+      <%= result %>
+    </h1>
+  <% end %>
 </div>
-
-<div class="footer l-box">
-    <p>
-        <a href="#">Try now</a> for 14 days. No credit card required. Header image courtesy of <a href='http://unsplash.com/'>Unsplash</a>.
-    </p>
-</div>
-
 
 
 </body>
