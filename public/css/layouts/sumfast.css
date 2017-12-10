@@ -31,6 +31,17 @@ p {
   padding: 250px 0;
 }
 
+#sum, #email, #submit {
+  margin: 2em;
+}
+
+/*
+ * -- Prevent Scrolling --
+ */
+body {
+    overflow: hidden;
+}
+
 /*
  * -- BANNER --
  * The top banner with the headings. By using a combination
