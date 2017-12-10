@@ -2,7 +2,11 @@ require 'sinatra/base'
 
 class Sumfast < Sinatra::Base
   get '/' do
-    'Hello World!'
+    erb :index
+  end
+
+  post '/' do
+
   end
 end
 
